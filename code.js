@@ -29,5 +29,5 @@ function calculate() {
   }
 
   // Output result
-  console.log("Result:", result);
+  document.getElementById("outputBox").innerText = "Result: " + result;
 }
