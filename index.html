@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Web App</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
-</head>
-<body>
-  <h1>Hello Boss 👋</h1>
-  <p>This is my first web app running on GitHub Pages.</p>
+  <title>Calculator Test</title>
 
-  <button onclick="alert('It works!')">
-    Click me
-  </button>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2>Simple Calculator Test</h2>
+
+  <!-- Inputs -->
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+
+  <br><br>
+
+  <!-- Radio buttons -->
+  <label>
+    <input type="radio" name="operation" value="add" checked>
+    Add
+  </label>
+
+  <label>
+    <input type="radio" name="operation" value="subtract">
+    Subtract
+  </label>
+
+  <label>
+    <input type="radio" name="operation" value="multiply">
+    Multiply
+  </label>
+
+  <label>
+    <input type="radio" name="operation" value="divide">
+    Divide
+  </label>
+
+  <br><br>
+
+  <!-- Button -->
+  <button onclick="calculate()">Calculate</button>
+
+  <!-- JS -->
+  <script src="code.js"></script>
+
 </body>
 </html>
